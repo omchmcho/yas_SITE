@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="テスト">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <title>ヤスノリ眼鏡店</title>
+  </head>
+  
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <h1 class="site-title">
+        <a href="./index.html">
+          <img src="img/logo.png" alt="yas_SITE">
+        </a>
+      </h1>
+      <nav class="pc">
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#brand">BRAND</a></li>
+          <li><a href="#project">PROJECT</a></li>
+          <li><a href="#information">INFORMATION</a></li>
+          <li>
+            <a href="https://www.Twitter.com"
+               target="_blank"
+               rel="noopener noreferrer">
+              <img src="./img/icon_Twitter.png" alt="Twitter" class="icon">
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <nav class="sp">
+        <input id="gnav-input" type="checkbox">
+        <label id="gnav-btn" for="gnav-input"><span></span></label>
+        <label id="gnav-overlay" for="gnav-input"><span></span></label>
+        <div id="gnav-content">
+          <ul class="gnac-menu">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#brand">BRAND</a></li>
+            <li><a href="#project">PROJECT</a></li>
+            <li><a href="#information">INFORMATION</a></li>
+            <li>
+              <a href="https://www.Twitter.com"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                <img src="./img/icon_Twitter.png" alt="Twitter" class="icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  
+    <!-- Main -->
+    <div id="main">
+      <picture>
+        <source media="(max-width: 600px)" srcset="./img/shopent.jpg">
+        <img src="./img/shopent.jpg" alt="">
+      </picture>
+    </div>
+  
+    <!-- about -->
+    <section id="about" class="wrapper">
+      <h2 class="sec-title">ABOUT</h2>
+      <ul>
+        <li>あなたに似合うメガネフレーム選び、あなたに合ったレンズ選びのお手伝いをさせていただきます。</li>
+        <li>似合う要素は、カラー、形、デザインのテイストやそれに備わるオーラ、サイズなど様々な要素があります。</li>
+        <li>一度の来店でそれに出合うかどうかはわかりません。</li>
+        <li>何度もお気軽にご来店・ご相談くださいませ。</li>
+      </ul>
+      <p>
+        １級眼鏡作成技能士在籍
+      </p>
+    </section>
+  
+    <!-- Gallery -->
+    <section id="gallery" class="wrapper">
+    <h2 class="sec-title">GALLERY</h2>
+    <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <img src="" class="modal-content" id="modal-img" alt="gallery-modal">
+    </div>
+    <ul>
+      <li><img src="./img/gallery_1.jpg" class="gallery-img" alt="gallery_1"></li>
+      <li><img src="./img/gallery_2.jpg" class="gallery-img" alt="gallery_2"></li>
+      <li><img src="./img/gallery_3.jpg" class="gallery-img" alt="gallery_3"></li>
+      <li><img src="./img/gallery_4.jpg" class="gallery-img" alt="gallery_4"></li>
+      <li><img src="./img/gallery_5.jpg" class="gallery-img" alt="gallery_5"></li>
+      <li><img src="./img/gallery_6.jpg" class="gallery-img" alt="gallery_6"></li>
+      <li><img src="./img/gallery_7.jpg" class="gallery-img" alt="gallery_7"></li>
+      <li><img src="./img/gallery_8.jpg" class="gallery-img" alt="gallery_8"></li>
+      <li><img src="./img/gallery_9.jpg" class="gallery-img" alt="gallery_9"></li>
+      <li><img src="./img/gallery_10.jpg" class="gallery-img" alt="gallery_10"></li>
+      <li><img src="./img/gallery_11.jpg" class="gallery-img" alt="gallery_11"></li>
+      <li><img src="./img/gallery_12.jpg" class="gallery-img" alt="gallery_12"></li>
+      <li><img src="./img/gallery_13.jpg" class="gallery-img" alt="gallery_13"></li>
+    </ul>
+    <script src="js/modal.js" defer></script>
+    </section>
+
+    <!-- Information -->
+    <section id="information" class="wrapper">
+      <h2 class="sec-title">INFORMATION</h2>
+      <dl>
+        <dt>2024/12/25</dt>
+        <dd>サイトのリニューアルをしました</dd>
+        <dt>2024/12/25</dt>
+        <dd>サイトのリニューアルをしました</dd>
+        <dt>2024/12/25</dt>
+        <dd>サイトのリニューアルをしました</dd>
+        <dt>2024/12/25</dt>
+        <dd>サイトのリニューアルをしました</dd>
+        <dt>2024/12/25</dt>
+        <dd>サイトのリニューアルをしました</dd>
+      </dl>
+    </section>
+  </body>
+</html>
