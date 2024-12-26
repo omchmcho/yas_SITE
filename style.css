@@ -181,8 +181,15 @@ li {
 }
 
 #gallery ul li img:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(1.1);
     opacity: 0.7;
+}
+
+#gallery ul li:nth-child(7) {
+    width: 100%;
+}
+#gallery ul li:nth-child(7) img:hover {
+    transform: scale(1.05);
 }
 
 /* information */
@@ -351,12 +358,8 @@ li {
     }
     
     /* gallery */
-    #gallery ul {
-        flex-direction: column;
-    }
-    
     #gallery ul li {
-        width: 100%;
+        width: 48%;
     }
     
     /* information */
