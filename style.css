@@ -1,0 +1,377 @@
+html {
+    font-size: 100%; /* デフォルトは16px */
+}
+
+body {
+    color: #24292e;
+    background: #dadada;
+    font-family: "Sawarabi Mincho", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 130px auto; /* 上、右、下、左の順 */
+    font-size: 0.9rem;
+    padding: 0 4%;
+}
+
+.site-title {
+    line-height: 1px;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.site-title a {
+    color: #24292e;
+    display: block;
+}
+
+.sec-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.sp {
+    display: none;
+}
+
+.pc {
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.5s ease;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover {
+    transform: scale(1.2);
+}
+
+/* header */
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 4%;
+    height: 140px;
+    background: rgba(218, 218, 218, 0.9);
+    z-index: 1000;
+}
+
+#header ul {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+
+#header ul li {
+    font-size: 0.9rem;
+    margin-left: 30px;
+}
+
+#header ul li a {
+    color: #24292e;
+    transition: all 0.3s;
+}
+
+#header ul li a:hover {
+    opacity: 0.5;
+}
+
+#header li img.icon {
+    width: 30px;
+}
+
+/* main */
+#main {
+    margin-top: 140px;
+    margin-bottom: 80px;
+}
+
+#main img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    /*max-width: 1920px;
+    margin: 0 auto;
+    display: block;*/
+}
+
+/* about */
+#about ul {
+    margin-bottom: 30px;
+}
+
+#about ul li {
+    margin-bottom:3px;
+}
+
+#about ul li:first-child {
+    margin-bottom: 30px;
+}
+
+/* gallery */
+#gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#gallery ul li {
+    width: 31%;
+    margin-bottom: 23px;
+}
+
+#gallery ul li img {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#gallery ul li img:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 0.7;
+}
+
+/* information */
+#information dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-top:1px solid #c8c8c8;
+    margin-bottom: 20px;
+}
+
+#information dt {
+    width: 20%;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 15px;
+}
+
+#information dd {
+    width: 80%;
+    border-bottom: 1px solid #c8c8c8;
+    padding: 15px;
+}
+
+/* sp */
+@media screen and (max-width: 600px) {
+    .site-title {
+        margin-top: 20px;
+    }
+
+    .sp {
+        display: block;
+    }
+    
+    .pc {
+        display: none;
+    }
+    
+    /* header */
+    #header {
+        flex-direction: column;
+        height: 100px;
+        line-height: 40px;
+    }
+    #header ul li a:hover {
+        opacity: 1;
+    }
+
+    #gnav-btn {
+        position: absolute;
+        display: flex;
+        top: 50%;
+        right: 10px;
+        height: 60px;
+        width: 60px;
+        transform: translateY(-50%);
+        justify-content: center;
+        align-items: center;
+        z-index: 300;
+    }
+
+    #gnav-btn span,
+    #gnav-btn span:before,
+    #gnav-btn span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background-color: #24292e;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+    }
+    #gnav-btn span:before {
+        bottom: 8px;
+    }
+    #gnav-btn span:after {
+        top: 8px;
+    }
+
+    #gnav-input:checked ~ #gnav-btn span {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    #gnav-input:checked ~ #gnav-btn span:before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #gnav-input:checked ~ #gnav-btn span:after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    #gnav-input:checked ~ #gnav-content {
+        transform: translateX(0);
+        box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+    }
+    #gnav-input:checked ~ #gnav-overlay {
+        opacity: 1; /* フェードイン */
+        pointer-events: auto; /* 表示時にクリック可能にする */
+    }
+
+    #gnav-input {
+        display: none;
+    }
+
+    #gnav-content {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        z-index: 500;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.6);
+        transition: 0.3s ease-in-out;
+        transform: translateX(105%);
+    }
+    #gnav-content ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    #gnav-content ul li {
+        margin-left: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 10px 15px;
+        width: 100%;
+    }
+    #gnav-content ul li a {
+        color: #dadada;
+        font-size: 1.2rem;
+        display: block;
+        padding: 10px;
+    }
+    #gnav-content ul li:last-child {
+        border-bottom: none;
+    }
+    #gnav-content ul li a::before {
+        content: "▶"; /* アイコンを追加 */
+        margin-right: 10px;
+        display: inline-block; /* インライン要素として扱う */
+        transition: transform 0.3s ease, color 0.3s ease; /* ホバー時の変化用 */
+    }
+    #gnav-content ul li a:hover::before {
+        transform: translateX(30%);
+        color: #ffa500; /* アイコンの色も変化 */
+    }
+
+    #gnav-overlay {
+        position: fixed;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 400;
+        opacity: 0;
+        pointer-events: none; /* 非表示時にクリック不可にする */
+        transition: opacity 0.5s ease; /* アニメーション設定 */
+    }
+
+    /* main */
+    #main {
+        margin-top: 100px;
+    }
+    
+    #main img {
+        height: 350px;
+    }
+    
+    /* gallery */
+    #gallery ul {
+        flex-direction: column;
+    }
+    
+    #gallery ul li {
+        width: 100%;
+    }
+    
+    /* information */
+    #information dl {
+        flex-direction: column;
+    }
+    
+    #information dt {
+        width: 100%;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    
+    #information dd {
+        width: 100%;
+        padding-top: 0;
+    }
+}
