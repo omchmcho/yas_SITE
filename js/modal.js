@@ -1,29 +1,12 @@
-﻿const modal = document.getElementById("modal");
-const modalImg = document.getElementById("modal-img");
-const gnavInput = document.getElementById("gnav-input");
-const galleryImgs = document.querySelectorAll(".gallery-img");
-const menuLinks = document.querySelectorAll("#gnav-content ul li a");
-const closeModal = document.querySelector(".close");
-
-galleryImgs.forEach(img => {
-    img.addEventListener("click", () => {
-        modal.style.display = "block";
-        modalImg.src = img.src;
-    });
-});
-
-closeModal.addEventListener("click", () => {
-    modal.style.display = "none";
-});
-
-window.addEventListener("click", (event) => {
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-});
+const menuLinks = document.querySelectorAll("#gnav-content ul li a"); // メニューリンクを取得
+const gnavInput = document.getElementById("gnav-input"); // ハンバーガーメニューのチェックボックスを取得
 
 menuLinks.forEach(link => {
-    link.addEventListener("click", () => {
-        gnavInput.checked = false; // メニューを閉じる
-    });
+    // clickイベントとtouchstartイベントの両方を追加
+    link.addEventListener("click", closeMenu);
+    link.addEventListener("touchstart", closeMenu);
 });
+
+function closeMenu() {
+    gnavInput.checked = false; // メニューを閉じる
+}
