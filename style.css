@@ -279,7 +279,7 @@ li {
     background-color: #888;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 300;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 
     opacity: 0;
