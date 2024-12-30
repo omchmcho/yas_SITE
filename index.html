@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
     <title>ヤスノリ眼鏡店</title>
   </head>
   
@@ -29,13 +32,13 @@
           <li><a href="#brand">BRAND</a></li>
           <li><a href="#project">PROJECT</a></li>
           <li><a href="#information">INFORMATION</a></li>
-          <li>
+          <!--<li>
             <a href="https://www.Twitter.com"
                target="_blank"
                rel="noopener noreferrer">
               <img src="./img/icon_Twitter.png" alt="Twitter" class="icon">
             </a>
-          </li>
+          </li>-->
         </ul>
       </nav>
       
@@ -50,23 +53,24 @@
             <li><a href="#brand">BRAND</a></li>
             <li><a href="#project">PROJECT</a></li>
             <li><a href="#information">INFORMATION</a></li>
-            <li>
+            <!--<li>
               <a href="https://www.Twitter.com"
                  target="_blank"
                  rel="noopener noreferrer">
                 <img src="./img/icon_Twitter.png" alt="Twitter" class="icon">
               </a>
-            </li>
+            </li>-->
           </ul>
         </div>
+        <script src="js/modal.js" defer></script>
       </nav>
     </header>
   
     <!-- Main -->
     <div id="main">
       <picture>
-        <source media="(max-width: 600px)" srcset="./img/shopent.jpg">
-        <img src="./img/shopent.jpg" alt="">
+        <source media="(max-width: 600px)" srcset="./img/main_entrance.jpg">
+        <img src="./img/main_entrance.jpg" alt="">
       </picture>
     </div>
   
@@ -86,44 +90,212 @@
   
     <!-- Gallery -->
     <section id="gallery" class="wrapper">
-    <h2 class="sec-title">GALLERY</h2>
-    <div id="modal" class="modal">
-      <span class="close">&times;</span>
-      <img src="" class="modal-content" id="modal-img" alt="gallery-modal">
-    </div>
-    <ul>
-      <li><img src="./img/gallery_1.jpg" class="gallery-img" alt="gallery_1"></li>
-      <li><img src="./img/gallery_2.jpg" class="gallery-img" alt="gallery_2"></li>
-      <li><img src="./img/gallery_3.jpg" class="gallery-img" alt="gallery_3"></li>
-      <li><img src="./img/gallery_4.jpg" class="gallery-img" alt="gallery_4"></li>
-      <li><img src="./img/gallery_5.jpg" class="gallery-img" alt="gallery_5"></li>
-      <li><img src="./img/gallery_6.jpg" class="gallery-img" alt="gallery_6"></li>
-      <li><img src="./img/gallery_7.jpg" class="gallery-img" alt="gallery_7"></li>
-      <li><img src="./img/gallery_8.jpg" class="gallery-img" alt="gallery_8"></li>
-      <li><img src="./img/gallery_9.jpg" class="gallery-img" alt="gallery_9"></li>
-      <li><img src="./img/gallery_10.jpg" class="gallery-img" alt="gallery_10"></li>
-      <li><img src="./img/gallery_11.jpg" class="gallery-img" alt="gallery_11"></li>
-      <li><img src="./img/gallery_12.jpg" class="gallery-img" alt="gallery_12"></li>
-      <li><img src="./img/gallery_13.jpg" class="gallery-img" alt="gallery_13"></li>
-    </ul>
-    <script src="js/modal.js" defer></script>
+      <h2 class="sec-title">GALLERY</h2>
+      <ul>
+        <li><img src="./img/gallery/gallery_1.jpg" class="gallery-img" alt="gallery_1"></li>
+        <li><img src="./img/gallery/gallery_2.jpg" class="gallery-img" alt="gallery_2"></li>
+        <li><img src="./img/gallery/gallery_3.jpg" class="gallery-img" alt="gallery_3"></li>
+        <li><img src="./img/gallery/gallery_4.jpg" class="gallery-img" alt="gallery_4"></li>
+        <li><img src="./img/gallery/gallery_5.jpg" class="gallery-img" alt="gallery_5"></li>
+        <li><img src="./img/gallery/gallery_6.jpg" class="gallery-img" alt="gallery_6"></li>
+        <li><img src="./img/gallery/gallery_7.jpg" class="gallery-img" alt="gallery_7"></li>
+        <li><img src="./img/gallery/gallery_8.jpg" class="gallery-img" alt="gallery_8"></li>
+        <li><img src="./img/gallery/gallery_9.jpg" class="gallery-img" alt="gallery_9"></li>
+        <li><img src="./img/gallery/gallery_10.jpg" class="gallery-img" alt="gallery_10"></li>
+        <li><img src="./img/gallery/gallery_11.jpg" class="gallery-img" alt="gallery_11"></li>
+        <li><img src="./img/gallery/gallery_12.jpg" class="gallery-img" alt="gallery_12"></li>
+        <li><img src="./img/gallery/gallery_13.jpg" class="gallery-img" alt="gallery_13"></li>
+      </ul>
     </section>
+    
+    <!-- Brand -->
+    <section id="brand" class="wrapper">
+      <h2 class="sec-title">BRAND</h2>
+      <ul>
+        <li>
+          <a href="https://akitto.co.jp/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/brand/brand_1.png" alt="AKITTO"></a>
+          <p>美しいもの、きれいなもの、可愛いもの
+            デザイナーの川上氏が様々なものからインスピレーションを受け、造り上げたアクセサリーのような眼鏡。
+            「可愛いけれど、甘すぎない。ほんの少しの色気も取り入れて」</p>
+          <a href="https://akitto.co.jp/" target="_blank" rel="noopener noreferrer">
+            公式サイト▶</a>
+        </li>
+        <li>
+          <a href="https://fleye.dk/en" target="_blank" rel="noopener noreferrer">
+            <img src="./img/brand/brand_2.png" alt="FLEYE COPENHAGEN"></a>
+          <p>２人の女性デザイナーにより２００２年に設立されたデンマークのブランド。
+            個人のスタイルと個性を引き立てて強調するアイウェア。
+            美しいニュアンスとユニークなデザインを組み合わせ、個性的で時代を超越したスタイル。</p>
+          <a href="https://fleye.dk/en" target="_blank" rel="noopener noreferrer">
+            公式サイト▶</a>
+        </li>
+        <li>
+          <img src="./img/brand/brand_3.png" alt="ENTOURAGE OF 7">
+          <p>アメリカ・LAを拠点に、デンマーク出身デザイナーが米国的クラシカルに
+            北欧の洗練さをプラスした上、 made in japan の技術を融合させたブランド。</p>
+        </li>
+        <li>
+          <a href="https://www.turning-opt.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/brand/brand_4.png" alt="谷口眼鏡"></a>
+          <p>「豊富な色柄と美しい艶、そして温かみのある質感をいかにフレームに仕立てるか」がテーマのブランド。
+            フィット性の高いパッド、フィッティングを容易にするための加工など、掛け心地の良さを追求しています。</p>
+          <a href="https://www.turning-opt.com/" target="_blank" rel="noopener noreferrer">
+            公式サイト▶</a>
+        </li>
+        <li>
+          <a href="https://www.bevelspecs.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/brand/brand_5.png" alt="BEVEL"></a>
+          <p>２人のアメリカ人により１９９９年、ニューヨークで設立。
+            クラシックでありながらミニマリストの美学を維持し、 スタイル、フィット感、パフォーマンスを向上させるための革新を常に追及しています。</p>
+          <a href="https://www.bevelspecs.com/" target="_blank" rel="noopener noreferrer">
+            公式サイト▶</a>
+        </li>
+        <li>
+          <a href="https://ukmk.jp/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/brand/brand_6.png" alt="UKMK eyewear"></a>
+          <p>「 有形無形 」をコンセプトに目に見えないものや
+            形のないものを大切に丁寧にデザインされたブランド。</p>
+          <a href="https://ukmk.jp/" target="_blank" rel="noopener noreferrer">
+            公式サイト▶</a>
+        </li>
+        <li>
+          <a href="https://sign1011.co.jp/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/brand/brand_7.png" alt="1011 by Jun Koga"></a>
+          <p>「 less than human 」から名称を変えたが、独自の世界観はそのままに
+            デザイナー甲賀氏が生み出す唯一無二のブランド。</p>
+          <a href="https://sign1011.co.jp/" target="_blank" rel="noopener noreferrer">
+            公式サイト▶</a>
+        </li>
+        <li>
+          <a href="https://cocoro-eyewear.jp/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/brand/brand_8.png" alt="COCORO"></a>
+          <p>日本の美を、デザインと機能美で上限した
+            温故知新の技術が息づくブランド。</p>
+          <a href="https://cocoro-eyewear.jp/" target="_blank" rel="noopener noreferrer">
+            公式サイト▶</a>
+        </li>
+        <li>
+          <a href="https://parasite-eyewear.com/noego/en/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/brand/brand_9.png" alt="NOEGO"></a>
+          <p>デザイナーであるヒューゴ氏の独創性にあふれたデザインが魅力のフランスのブランド。
+            ファッション性を前面に押し出し、真に自分を表現したい人のための眼鏡です。</p>
+          <a href="https://parasite-eyewear.com/noego/en/" target="_blank" rel="noopener noreferrer">
+            公式サイト▶</a>
+        </li>
+        <li>
+          <a href="https://micedrawtokyo.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/brand/brand_10.png" alt="Micedraw Tokyo"></a>
+          <p>「実践的かつ自然体の眼鏡」がコンセプトのブランド。
+            厚み３．５mmの薄いアセテート生地やβチタンを使用することにより軽量で快適な掛け心地を実現しました</p>
+          <a href="https://micedrawtokyo.com/" target="_blank" rel="noopener noreferrer">
+            公式サイト▶</a>
+        </li>
+        <li>
+          <img src="./img/brand/brand_11.png" alt="LABYRINTH">
+          <p>デザイナー影郎氏が「筆を持つのも芸術、楽器を持つのも芸術。手段は違っても目指すものが変わらないのが芸術」
+            という持論のもと生み出す数々の作品。</p>
+        </li>
+        <li>
+          <a href="https://www.pierre-eyewear.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/brand/brand_12.png" alt="Pierre Eyewear"></a>
+          <p>シンプルな構造でラインを魅せるフランスのブランド。
+            ベーシックで美しいフレームデザインを大切にしながら、
+            スクーターや花など人々をワクワクさせるようなコレクションも展開しています。</p>
+          <a href="https://www.pierre-eyewear.com/" target="_blank" rel="noopener noreferrer">
+            公式サイト▶</a>
+        </li>
+        <li>
+          <a href="https://perfect-number.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/brand/brand_13.png" alt="PERFECT NUMBER"></a>
+          <p>基本理念は「Design プラス Something」。
+            クラシカルからポップまで独自のアプローチで表現するブランド。
+            メタルフレームの塗装はほぼ特注カラーで一本一本、職人が手作業で色付けをしています。</p>
+          <a href="https://perfect-number.com/" target="_blank" rel="noopener noreferrer">
+            公式サイト▶</a>
+        </li>
+        <li>
+          <a href="https://say-oh.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/brand/brand_14.png" alt="Say-oH"></a>
+          <p>「something that makes you say "OH!"」
+            新潟県三条市にてデザイナー兼職人のクリス氏が手掛けるブランド。
+            イタリア製のアセテート生地を素材に「遊び心を形にする」眼鏡作りをしています。</p>
+          <a href="https://say-oh.com/" target="_blank" rel="noopener noreferrer">
+            公式サイト▶</a>
+        </li>
+      </ul>
+    </section>
+    
+    <!-- Project -->
+    <section id="project" class="wrapper">
+      <h2 class="sec-title">PROJECT</h2>
+      <ul>
+        <li>
+          <img src="img/project/project_1.jpg" alt="Project 1">
+          <p>ヤスノリ眼鏡店では年に２回、春と秋に<span>「メガネメイクイベント」</span>を開催しております。<br><br>
+            プロのメイクアップアーティストがパーソナルカラーと骨格診断を基に眼鏡に合ったメイク方法を伝授いたします。<br>
+            そして実際にお似合いになるメガネデザインをセレクトさせて頂きまして、
+            自身を客観的に見る為にプロフォトグラファーに写真を撮ってもらうメガネモデル体験をして頂きます。
+            （お写真は後日お送りいたします）<br>
+            このイベントで、メガネをお買い上げになる必要は全くありません。 メガネがウィークポイントではなく
+            イメージアップアイテムであり、 ファッションの一部であることを体感して頂くイベントです。</p>
+        </li>
+        <li>
+          <img src="img/project/project_2.jpg" alt="Project 2">
+          <p>ヤスノリ眼鏡店では<span>着物と最新のメガネデザインとの調和</span>を目指しています。<br><br>
+            着物ならば裸眼のほうが。。。というのは昔の考え。<br>
+            女性スタッフが、主に日曜日に着物で接客をして、お着物にも合う眼鏡をご提案させていただき、
+            多くの着物女子に喜んで頂いております</p>
+        </li>
+      </ul>
+    </section>
+
 
     <!-- Information -->
     <section id="information" class="wrapper">
       <h2 class="sec-title">INFORMATION</h2>
       <dl>
+        <dt>2024/12/28</dt>
+        <dd>年内の営業は29日までです。年始は5日から営業いたします。</dd>
         <dt>2024/12/25</dt>
-        <dd>サイトのリニューアルをしました</dd>
-        <dt>2024/12/25</dt>
-        <dd>サイトのリニューアルをしました</dd>
-        <dt>2024/12/25</dt>
-        <dd>サイトのリニューアルをしました</dd>
-        <dt>2024/12/25</dt>
-        <dd>サイトのリニューアルをしました</dd>
-        <dt>2024/12/25</dt>
-        <dd>サイトのリニューアルをしました</dd>
+        <dd>サイトのリニューアルをしました。</dd>
       </dl>
     </section>
+    
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="img/logo.png" alt="ヤスノリ眼鏡店">
+        </div>
+        <dl class="footer-address">
+          <dt>住所</dt><dd>〒543-0052　大阪市天王寺区大道5-6-14</dd>
+          <dt>電話番号</dt><dd>06-6779-5713</dd>
+          <dt>メール</dt><dd>mail@yasmeg.com</dd>
+          <dt>営業時間</dt><dd>午前9:00 ～ 午後6:00</dd>
+          <dt>定休日</dt><dd>木曜日</dd>
+        </dl>
+        <div class="footer-links">
+          <a href="https://www.facebook.com/yasunori.eyewear/" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon_Facebook.png" alt="Facebook">
+          </a>
+          <a href="https://www.instagram.com/yasunori_gram/" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon_Instagram.png" alt="Instagram">
+          </a>
+          <a href="https://www.instagram.com/eyewear_yasunori/" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon_Instagram.png" alt="LinkedIn">
+          </a>
+          <a href="https://x.com/opt_yasunori" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon_X.png" alt="Twitter">
+          </a>
+          <a href="http://yasunori-blog.seesaa.net/" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon_Blog.png" alt="YouTube">
+          </a>
+        </div>
+      </div>
+      <p class="footer-copyright">Copyright © 2024 ヤスノリ眼鏡店.All Rights Reserved.</p>
+    </footer>
+    <div id="page-top"><a href=""></a></div>
+    <script src="js/script.js"></script>
   </body>
 </html>
