@@ -107,6 +107,7 @@ li {
     width: 100%;
     height: 500px;
     object-fit: cover;
+    opacity: 0;
     animation: fadeSlideshow 10s infinite;
 }
 #main img:nth-child(1) {
