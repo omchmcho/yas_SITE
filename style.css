@@ -135,6 +135,29 @@ li {
 #about p {
     margin-bottom: 30px;
 }
+#about dl {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1rem;
+    margin: 0 auto 30px auto;
+}
+#about div {
+    width: 20%;
+}
+#about dt {
+    width: 20%;
+    padding: 5px;
+    border-bottom: 1px solid #c8c8c8;
+}
+#about dd {
+    width: 40%;
+    padding: 5px;
+    border-bottom: 1px solid #c8c8c8;
+}
+#about dt:last-of-type,
+#about dd:last-of-type {
+    border-bottom: none;
+}
 #about iframe {
     display: block;
     margin: 0 auto;
@@ -439,14 +462,14 @@ li {
         border-bottom: none;
     }
     #gnav-content ul li a::before {
-        content: "▶"; /* アイコンを追加 */
+        content: "▶";
         margin-right: 10px;
-        display: inline-block; /* インライン要素として扱う */
-        transition: transform 0.3s ease, color 0.3s ease; /* ホバー時の変化用 */
+        display: inline-block;
+        transition: transform 0.3s ease, color 0.3s ease;
     }
     #gnav-content ul li a:hover::before {
         transform: translateX(30%);
-        color: #ffa500; /* アイコンの色も変化 */
+        color: #ffa500;
     }
 
     #gnav-overlay {
@@ -458,8 +481,8 @@ li {
         background: rgba(0, 0, 0, 0.5);
         z-index: 400;
         opacity: 0;
-        pointer-events: none; /* 非表示時にクリック不可にする */
-        transition: opacity 0.5s ease; /* アニメーション設定 */
+        pointer-events: none;
+        transition: opacity 0.5s ease;
     }
 
     /* main */
@@ -468,6 +491,17 @@ li {
     }
     
     #main img {
+    }
+    
+    /* about */
+    #about div {
+        width: 10%;
+    }
+    #about dt {
+        width: 30%;
+    }
+    #about dd {
+        width: 50%;
     }
     
     /* gallery */
@@ -528,7 +562,7 @@ li {
         padding: 20px;
     }
     .footer-logo {
-        margin-bottom: 20px; /* 下に間隔を追加 */
+        margin-bottom: 20px;
     }
     .footer-address {
         flex-direction: column;
