@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="テスト">
     <meta name="format-detection" content="telephone=no">
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="img/icon/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,16 +62,16 @@
             </li>-->
           </ul>
         </div>
-        <script src="js/modal.js" defer></script>
+        <script src="js/closeMenu.js" defer></script>
       </nav>
     </header>
   
     <!-- Main -->
     <div id="main">
-      <picture>
-        <source media="(max-width: 600px)" srcset="./img/main_entrance.jpg">
-        <img src="./img/main_entrance.jpg" alt="">
-      </picture>
+      <div>
+        <img src="./img/main/main_entrance.jpg" alt="main1">
+        <img src="./img/main/main_indoor.png" alt="main2">
+      </div>
     </div>
   
     <!-- about -->
@@ -86,6 +86,13 @@
       <p>
         １級眼鏡作成技能士在籍
       </p>
+      <h2 class="sec-title">ACCESS</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6564.525083016146!2d135.522681!3d34.648072!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000dde31c4eb8f9%3A0xd0cc0abd948c3e77!2z44CSNTQzLTAwNTIg5aSn6Ziq5bqc5aSn6Ziq5biC5aSp546L5a-65Yy65aSn6YGT77yV5LiB55uu77yW4oiS77yR77yU!5e0!3m2!1sja!2sjp!4v1735634811966!5m2!1sja!2sjp"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
     </section>
   
     <!-- Gallery -->
@@ -115,19 +122,17 @@
         <li>
           <a href="https://akitto.co.jp/" target="_blank" rel="noopener noreferrer">
             <img src="./img/brand/brand_1.png" alt="AKITTO"></a>
-          <p>美しいもの、きれいなもの、可愛いもの
-            デザイナーの川上氏が様々なものからインスピレーションを受け、造り上げたアクセサリーのような眼鏡。
-            「可愛いけれど、甘すぎない。ほんの少しの色気も取り入れて」</p>
-          <a href="https://akitto.co.jp/" target="_blank" rel="noopener noreferrer">
+          <p>「可愛いけれど、甘すぎない。ほんの少しの色気も取り入れて。」<br>
+            デザイナーの川上氏が様々なものからインスピレーションを受け造り上げた、アクセサリーのような眼鏡。</p>
+          <a class="brand-link" href="https://akitto.co.jp/" target="_blank" rel="noopener noreferrer">
             公式サイト▶</a>
         </li>
         <li>
           <a href="https://fleye.dk/en" target="_blank" rel="noopener noreferrer">
             <img src="./img/brand/brand_2.png" alt="FLEYE COPENHAGEN"></a>
           <p>２人の女性デザイナーにより２００２年に設立されたデンマークのブランド。
-            個人のスタイルと個性を引き立てて強調するアイウェア。
             美しいニュアンスとユニークなデザインを組み合わせ、個性的で時代を超越したスタイル。</p>
-          <a href="https://fleye.dk/en" target="_blank" rel="noopener noreferrer">
+          <a class="brand-link" href="https://fleye.dk/en" target="_blank" rel="noopener noreferrer">
             公式サイト▶</a>
         </li>
         <li>
@@ -139,16 +144,16 @@
           <a href="https://www.turning-opt.com/" target="_blank" rel="noopener noreferrer">
             <img src="./img/brand/brand_4.png" alt="谷口眼鏡"></a>
           <p>「豊富な色柄と美しい艶、そして温かみのある質感をいかにフレームに仕立てるか」がテーマのブランド。
-            フィット性の高いパッド、フィッティングを容易にするための加工など、掛け心地の良さを追求しています。</p>
-          <a href="https://www.turning-opt.com/" target="_blank" rel="noopener noreferrer">
+            フィット性の高いパッド、フィッティングを容易にするための加工など、掛け心地の良さを追求。</p>
+          <a class="brand-link" href="https://www.turning-opt.com/" target="_blank" rel="noopener noreferrer">
             公式サイト▶</a>
         </li>
         <li>
           <a href="https://www.bevelspecs.com/" target="_blank" rel="noopener noreferrer">
             <img src="./img/brand/brand_5.png" alt="BEVEL"></a>
           <p>２人のアメリカ人により１９９９年、ニューヨークで設立。
-            クラシックでありながらミニマリストの美学を維持し、 スタイル、フィット感、パフォーマンスを向上させるための革新を常に追及しています。</p>
-          <a href="https://www.bevelspecs.com/" target="_blank" rel="noopener noreferrer">
+            クラシックでありながらミニマリストの美学を維持し、 スタイル、フィット感、パフォーマンスを向上させるための革新を追及。</p>
+          <a class="brand-link" href="https://www.bevelspecs.com/" target="_blank" rel="noopener noreferrer">
             公式サイト▶</a>
         </li>
         <li>
@@ -156,7 +161,7 @@
             <img src="./img/brand/brand_6.png" alt="UKMK eyewear"></a>
           <p>「 有形無形 」をコンセプトに目に見えないものや
             形のないものを大切に丁寧にデザインされたブランド。</p>
-          <a href="https://ukmk.jp/" target="_blank" rel="noopener noreferrer">
+          <a class="brand-link" href="https://ukmk.jp/" target="_blank" rel="noopener noreferrer">
             公式サイト▶</a>
         </li>
         <li>
@@ -164,7 +169,7 @@
             <img src="./img/brand/brand_7.png" alt="1011 by Jun Koga"></a>
           <p>「 less than human 」から名称を変えたが、独自の世界観はそのままに
             デザイナー甲賀氏が生み出す唯一無二のブランド。</p>
-          <a href="https://sign1011.co.jp/" target="_blank" rel="noopener noreferrer">
+          <a class="brand-link" href="https://sign1011.co.jp/" target="_blank" rel="noopener noreferrer">
             公式サイト▶</a>
         </li>
         <li>
@@ -172,23 +177,23 @@
             <img src="./img/brand/brand_8.png" alt="COCORO"></a>
           <p>日本の美を、デザインと機能美で上限した
             温故知新の技術が息づくブランド。</p>
-          <a href="https://cocoro-eyewear.jp/" target="_blank" rel="noopener noreferrer">
+          <a class="brand-link" href="https://cocoro-eyewear.jp/" target="_blank" rel="noopener noreferrer">
             公式サイト▶</a>
         </li>
         <li>
           <a href="https://parasite-eyewear.com/noego/en/" target="_blank" rel="noopener noreferrer">
             <img src="./img/brand/brand_9.png" alt="NOEGO"></a>
           <p>デザイナーであるヒューゴ氏の独創性にあふれたデザインが魅力のフランスのブランド。
-            ファッション性を前面に押し出し、真に自分を表現したい人のための眼鏡です。</p>
-          <a href="https://parasite-eyewear.com/noego/en/" target="_blank" rel="noopener noreferrer">
+            ファッション性を前面に押し出し、真に自分を表現したい人のための眼鏡。</p>
+          <a class="brand-link" href="https://parasite-eyewear.com/noego/en/" target="_blank" rel="noopener noreferrer">
             公式サイト▶</a>
         </li>
         <li>
           <a href="https://micedrawtokyo.com/" target="_blank" rel="noopener noreferrer">
             <img src="./img/brand/brand_10.png" alt="Micedraw Tokyo"></a>
           <p>「実践的かつ自然体の眼鏡」がコンセプトのブランド。
-            厚み３．５mmの薄いアセテート生地やβチタンを使用することにより軽量で快適な掛け心地を実現しました</p>
-          <a href="https://micedrawtokyo.com/" target="_blank" rel="noopener noreferrer">
+            厚み3.5mmの薄いアセテート生地やβチタンを使用することにより軽量で快適な掛け心地を実現。</p>
+          <a class="brand-link" href="https://micedrawtokyo.com/" target="_blank" rel="noopener noreferrer">
             公式サイト▶</a>
         </li>
         <li>
@@ -201,8 +206,8 @@
             <img src="./img/brand/brand_12.png" alt="Pierre Eyewear"></a>
           <p>シンプルな構造でラインを魅せるフランスのブランド。
             ベーシックで美しいフレームデザインを大切にしながら、
-            スクーターや花など人々をワクワクさせるようなコレクションも展開しています。</p>
-          <a href="https://www.pierre-eyewear.com/" target="_blank" rel="noopener noreferrer">
+            スクーターや花など人々をワクワクさせるようなコレクションも展開。</p>
+          <a class="brand-link" href="https://www.pierre-eyewear.com/" target="_blank" rel="noopener noreferrer">
             公式サイト▶</a>
         </li>
         <li>
@@ -210,8 +215,8 @@
             <img src="./img/brand/brand_13.png" alt="PERFECT NUMBER"></a>
           <p>基本理念は「Design プラス Something」。
             クラシカルからポップまで独自のアプローチで表現するブランド。
-            メタルフレームの塗装はほぼ特注カラーで一本一本、職人が手作業で色付けをしています。</p>
-          <a href="https://perfect-number.com/" target="_blank" rel="noopener noreferrer">
+            メタルフレームの塗装はほぼ特注カラーで一本一本、職人が手作業で色付け。</p>
+          <a class="brand-link" href="https://perfect-number.com/" target="_blank" rel="noopener noreferrer">
             公式サイト▶</a>
         </li>
         <li>
@@ -219,8 +224,8 @@
             <img src="./img/brand/brand_14.png" alt="Say-oH"></a>
           <p>「something that makes you say "OH!"」
             新潟県三条市にてデザイナー兼職人のクリス氏が手掛けるブランド。
-            イタリア製のアセテート生地を素材に「遊び心を形にする」眼鏡作りをしています。</p>
-          <a href="https://say-oh.com/" target="_blank" rel="noopener noreferrer">
+            イタリア製のアセテート生地を素材に「遊び心を形にする」眼鏡作り。</p>
+          <a class="brand-link" href="https://say-oh.com/" target="_blank" rel="noopener noreferrer">
             公式サイト▶</a>
         </li>
       </ul>
@@ -234,11 +239,10 @@
           <img src="img/project/project_1.jpg" alt="Project 1">
           <p>ヤスノリ眼鏡店では年に２回、春と秋に<span>「メガネメイクイベント」</span>を開催しております。<br><br>
             プロのメイクアップアーティストがパーソナルカラーと骨格診断を基に眼鏡に合ったメイク方法を伝授いたします。<br>
-            そして実際にお似合いになるメガネデザインをセレクトさせて頂きまして、
+            そして実際にお似合いになるメガネデザインをセレクトさせて頂き、
             自身を客観的に見る為にプロフォトグラファーに写真を撮ってもらうメガネモデル体験をして頂きます。
             （お写真は後日お送りいたします）<br>
-            このイベントで、メガネをお買い上げになる必要は全くありません。 メガネがウィークポイントではなく
-            イメージアップアイテムであり、 ファッションの一部であることを体感して頂くイベントです。</p>
+            メガネがウィークポイントではなくイメージアップアイテムであり、 ファッションの一部であることを体感して頂くイベントです。</p>
         </li>
         <li>
           <img src="img/project/project_2.jpg" alt="Project 2">
@@ -277,25 +281,25 @@
         </dl>
         <div class="footer-links">
           <a href="https://www.facebook.com/yasunori.eyewear/" target="_blank" rel="noopener noreferrer">
-            <img src="img/icon_Facebook.png" alt="Facebook">
+            <img src="img/icon/icon_Facebook.png" alt="Facebook">
           </a>
           <a href="https://www.instagram.com/yasunori_gram/" target="_blank" rel="noopener noreferrer">
-            <img src="img/icon_Instagram.png" alt="Instagram">
+            <img src="img/icon/icon_Instagram.png" alt="Instagram 1">
           </a>
           <a href="https://www.instagram.com/eyewear_yasunori/" target="_blank" rel="noopener noreferrer">
-            <img src="img/icon_Instagram.png" alt="LinkedIn">
+            <img src="img/icon/icon_Instagram.png" alt="Instagram 2">
           </a>
           <a href="https://x.com/opt_yasunori" target="_blank" rel="noopener noreferrer">
-            <img src="img/icon_X.png" alt="Twitter">
+            <img src="img/icon/icon_X.png" alt="X">
           </a>
           <a href="http://yasunori-blog.seesaa.net/" target="_blank" rel="noopener noreferrer">
-            <img src="img/icon_Blog.png" alt="YouTube">
+            <img src="img/icon/icon_Blog.png" alt="Blog">
           </a>
         </div>
       </div>
-      <p class="footer-copyright">Copyright © 2024 ヤスノリ眼鏡店.All Rights Reserved.</p>
+      <p class="footer-copyright">Copyright © 2024 株式会社ヤスノリ.All Rights Reserved.</p>
     </footer>
     <div id="page-top"><a href="#"></a></div>
-    <script src="js/script.js"></script>
+    <script src="js/pageTopBtn.js"></script>
   </body>
 </html>
